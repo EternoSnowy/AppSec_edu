@@ -1,0 +1,16 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "Insecure Bank Threat model",
+    "owner": "Eterno",
+    "description": "Homework",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "Eterno",
+    "threatTop": 0
+  }
+}
