@@ -136,16 +136,29 @@
               "threats": [
                 {
                   "id": "88eb5bc1-922d-4fc3-8ca8-fb61afcf74e1",
-                  "title": "Обход аутентификации грубой силой",
+                  "title": "Обход аутентификации",
                   "status": "Open",
                   "severity": "High",
                   "type": "Elevation of privilege",
-                  "description": "Способы:\n1. Ручной перебор на основе собственных знаний о пользователе.\n2. Использование автоматизированного перебора на основе словарей.\n\nDREAD: 8;3;9;4;2/\n\n",
-                  "mitigation": "1. Не использовать очевидные пароли, связанные с вашей личностью.\n2. Использовать сложные пароли.",
+                  "description": "Способы:\n1. Ручной перебор на основе собственных знаний о пользователе.\n2. Использование автоматизированного перебора на основе словарей.\n3. SQL-инъекция.\n\nDREAD: 8;3;9;4;2/26\n\n",
+                  "mitigation": "1. Не использовать очевидные пароли, связанные с вашей личностью.\n2. Использовать сложные пароли.\n3. Запрет конкатенации в окне вода данных.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 3,
                   "score": "26"
+                },
+                {
+                  "id": "15bc5fc3-fa9b-4604-b3e7-cbc31681fa47",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 4,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -154,17 +167,8 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 2
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -371,6 +375,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Eterno",
-    "threatTop": 3
+    "threatTop": 4
   }
 }
