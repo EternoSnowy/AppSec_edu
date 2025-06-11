@@ -150,8 +150,8 @@
                 "text": "Пользователь"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -247,9 +247,27 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "5e098b5f-2833-4f4a-8469-c7648818c00e",
+                  "title": "Компрометация учетных данных",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Способы:\n1. Базы данных утечек.\n2. Сниффинг.\n3. Социальная инженерия.\nDREAD: 8;5;7;6;7/",
+                  "mitigation": "1. Не использовать одинаковые пароли; периодически менять пароли.\n2. Проверять систему на наличие вредоносного ПО.\n3. Повышать осознанность и внимательность пользователя.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": "33"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             },
             "tools": {
               "items": [
@@ -264,6 +282,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Eterno",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
