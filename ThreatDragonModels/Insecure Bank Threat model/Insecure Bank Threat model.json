@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 350,
-              "y": 190.00000000000006
+              "x": 430,
+              "y": 35
             },
             "size": {
               "width": 140,
@@ -269,12 +269,87 @@
                 "repudiation": 0
               }
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "48d4316e-0ae4-4189-8935-4068be7e62c5",
+                  "title": "Перехват данных",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Способы:\n1. Атаки типа MitM.\n\nDREAD: 8;5;6;3;5/27",
+                  "mitigation": "1. Использование защищенных протоколов; использование систем предотвращения вторжений.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": "27"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "6b31d9f3-31bb-40da-bfb5-392d919f71a9",
+            "source": {
+              "x": 260,
+              "y": 100
+            },
+            "target": {
+              "cell": "d7f3a35c-1293-41aa-acdf-cbe3cae49b65",
+              "port": "3c8a93e9-a6a8-454a-9e74-2e8bb6b15be2"
+            },
+            "vertices": [],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "Eterno",
-    "threatTop": 1
+    "threatTop": 2
   }
 }
