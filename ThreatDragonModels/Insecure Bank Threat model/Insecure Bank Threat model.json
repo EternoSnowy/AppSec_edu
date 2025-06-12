@@ -19,6 +19,32 @@
         "cells": [
           {
             "position": {
+              "x": 690,
+              "y": 125
+            },
+            "size": {
+              "width": 740,
+              "height": 350
+            },
+            "attrs": {
+              "label": {
+                "text": "Interface"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "dfa9b285-9409-4940-85f7-875cd8e9e540",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Interface",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
               "x": 420,
               "y": 235
             },
@@ -410,13 +436,13 @@
               "port": "5dcc7acf-aa6c-4823-a0ce-0d3deabd5f42"
             },
             "target": {
-              "cell": "c5f65e3f-978a-4755-a0ff-23f369c1aa6e",
-              "port": "bfcd2727-f3ad-49b4-a8a8-32095d6a22ad"
+              "x": 690,
+              "y": 300
             }
           },
           {
             "position": {
-              "x": 665.9999999999999,
+              "x": 716,
               "y": 235
             },
             "size": {
@@ -557,7 +583,7 @@
           },
           {
             "position": {
-              "x": 875,
+              "x": 930,
               "y": 235
             },
             "size": {
