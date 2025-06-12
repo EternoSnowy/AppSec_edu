@@ -762,8 +762,8 @@
                 "text": "View profile"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -859,12 +859,175 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "7a6c5d4b-cff5-4f69-891a-5355dee3eeb2",
+                  "title": "Компрометация данных пользователя",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "ФИО, дата регистрации профиля, количество и номера карт, фото.\n\nDREAD: 2;2;6;4;10",
+                  "mitigation": "1. Маскирование данных",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": "24"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 1105,
+              "y": 320
+            },
+            "size": {
+              "width": 170,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Download\nCertificates"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "7a26eb4f-3d07-472a-a1fc-63005d105118"
+                },
+                {
+                  "group": "right",
+                  "id": "c6a6e656-e53b-43cb-a0a7-722887ef35af"
+                },
+                {
+                  "group": "bottom",
+                  "id": "e9af83a2-4f85-4b1c-a6ea-08d6d6af3796"
+                },
+                {
+                  "group": "left",
+                  "id": "bfcd2727-f3ad-49b4-a8a8-32095d6a22ad"
+                }
+              ]
+            },
+            "id": "5af4db00-2c2d-4428-aa6d-84fd510dee74",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Process",
+              "name": "Download\nCertificates",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "6089f279-1cc4-4a3f-8698-bab1a6cbe0ce",
+                  "title": "Компрометация доверенного сертификата",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Information disclosure",
+                  "description": "В профиле имеется возможность скачать цифровой сертификат пользователя.\n\nDREAD: 8;10;10;3;10",
+                  "mitigation": "Установить запрет на скачивание.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": "41"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           }
         ]
@@ -872,6 +1035,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Eterno",
-    "threatTop": 6
+    "threatTop": 8
   }
 }
