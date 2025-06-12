@@ -19,32 +19,6 @@
         "cells": [
           {
             "position": {
-              "x": 640,
-              "y": 190
-            },
-            "size": {
-              "width": 520,
-              "height": 210
-            },
-            "attrs": {
-              "label": {
-                "text": "DASHBOARD"
-              }
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "id": "4cd5fd14-3d3b-44f9-8dca-7a84966a77a6",
-            "zIndex": -1,
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "DASHBOARD",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
               "x": 420,
               "y": 235
             },
@@ -580,12 +554,153 @@
                 "elevationOfPrivilege": 0
               }
             }
+          },
+          {
+            "position": {
+              "x": 875,
+              "y": 235
+            },
+            "size": {
+              "width": 150,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "Transfers"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "7a26eb4f-3d07-472a-a1fc-63005d105118"
+                },
+                {
+                  "group": "right",
+                  "id": "c6a6e656-e53b-43cb-a0a7-722887ef35af"
+                },
+                {
+                  "group": "bottom",
+                  "id": "e9af83a2-4f85-4b1c-a6ea-08d6d6af3796"
+                },
+                {
+                  "group": "left",
+                  "id": "bfcd2727-f3ad-49b4-a8a8-32095d6a22ad"
+                }
+              ]
+            },
+            "id": "679ad2c0-b7ba-4cc7-a3a5-8252fef8e6b9",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Process",
+              "name": "Transfers",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "96fc1f45-ead6-4019-b1ba-31809668a531",
+                  "title": "Кража денежных средств",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Spoofing",
+                  "description": "Вывод денежных средств с аккаунта на сторонний счет без согласия пользователя.\n\nDREAD: 9;8;10;3;10",
+                  "mitigation": "1. Использование 2FA при переводах.\n2. Выставление лимитов по переводам.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": "40"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            }
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "Eterno",
-    "threatTop": 5
+    "threatTop": 6
   }
 }
