@@ -1029,12 +1029,294 @@
                 "elevationOfPrivilege": 0
               }
             }
+          },
+          {
+            "position": {
+              "x": 1270,
+              "y": 180
+            },
+            "size": {
+              "width": 130,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Upload\nnew certificate"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "7a26eb4f-3d07-472a-a1fc-63005d105118"
+                },
+                {
+                  "group": "right",
+                  "id": "c6a6e656-e53b-43cb-a0a7-722887ef35af"
+                },
+                {
+                  "group": "bottom",
+                  "id": "e9af83a2-4f85-4b1c-a6ea-08d6d6af3796"
+                },
+                {
+                  "group": "left",
+                  "id": "bfcd2727-f3ad-49b4-a8a8-32095d6a22ad"
+                }
+              ]
+            },
+            "id": "412efa6b-a09d-47a5-b67b-a24bbb60e7a6",
+            "zIndex": 15,
+            "data": {
+              "type": "tm.Process",
+              "name": "Upload\nnew certificate",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "6851ceef-be7f-4ebb-a3ce-e4ced41514ae",
+                  "title": "Загрузка вредоносного файла",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Tampering",
+                  "description": "Страница профиля предполагает возможность загружать файлы. Это может быть использовано злоумышленником для загрузки вредоносного файла, что в свою очередь может повлечь нарушение работоспособности сайта, возможность RCE и др.\n\nDREAD: 10;6;6;10;9",
+                  "mitigation": "1. Настроить ограничение на тип загружаемых файлов.\n2. Загружать сертификат не на прямую файлом, а другим способом.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": "41"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 1285,
+              "y": 315
+            },
+            "size": {
+              "width": 100,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Upload photo"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "7a26eb4f-3d07-472a-a1fc-63005d105118"
+                },
+                {
+                  "group": "right",
+                  "id": "c6a6e656-e53b-43cb-a0a7-722887ef35af"
+                },
+                {
+                  "group": "bottom",
+                  "id": "e9af83a2-4f85-4b1c-a6ea-08d6d6af3796"
+                },
+                {
+                  "group": "left",
+                  "id": "bfcd2727-f3ad-49b4-a8a8-32095d6a22ad"
+                }
+              ]
+            },
+            "id": "74475f86-9d64-45d5-a9dc-9e4958ab398e",
+            "zIndex": 16,
+            "data": {
+              "type": "tm.Process",
+              "name": "Upload photo",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "7419cfde-2a37-45c5-892b-d88056e669ed",
+                  "title": "Загрузка вредоносного файла",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Tampering",
+                  "description": "Страница профиля предполагает возможность загружать фото, но при этом не ограничивается тип файла для загрузки. Это может быть использовано злоумышленником для загрузки вредоносного файла, что в свою очередь может повлечь нарушение работоспособности сайта, возможность RCE и др.\n\nDREAD: 10;6;6;10;9",
+                  "mitigation": "1. Ограничить формат и размер файлов для загрузки фото.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": "41"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
+            }
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "Eterno",
-    "threatTop": 8
+    "threatTop": 11
   }
 }
